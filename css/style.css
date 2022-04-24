@@ -122,7 +122,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .block_sky{
     width: 1440px;
     height: 400px;
-    background: url(img/bg_sky.png) no-repeat top / auto 200px, linear-gradient(#87C6EB00, #87C6EB);   
+    background: url(/img/bg_sky.png) no-repeat top / auto 200px, linear-gradient(#87C6EB00, #87C6EB);   
     
     /*Стили для текста*/
     font-size: 40px;
