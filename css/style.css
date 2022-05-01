@@ -21,46 +21,37 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 .main_conteiner
 {
-    width: 1440px; /*ширина 1440пикселей*/
-    height: 2148px; /*высота 2148пикселей*/
     margin: 0 auto; /*отступ главного контейнера сверху и снизу 0, по ширине - по центру, т.е авто*/
     /*border: 2px solid red;*/
 }
 
 .main_conteiner_h1
 {
-    width: 761px;
-    height: 66px; 
     font-family: 'Arapey', sans-serif;
     font-size: 50px;
     font-weight: 400;
     text-align: center;
-    line-height: 65.76px;
+    line-height: 66px;
     margin-top: 100px;
-    margin-right: 340px;
-    margin-left: 339px;
-    
+        
     color: #9DB0D1;
   
 }
 .main_paragr{
     width: 1024px;
-    height: 48px;
     font-size: 20px;
     line-height: 24.31px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     text-align: center;
-    margin-left: 208px;
-    margin-right: 208px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     color: #000000;
      
 }
 
 .main_conteiner_button{
-    width: 267px;
-    height: 80px;
     font-family: 'Arapey', sans-serif;
     font-size: 30px;
     line-height: 32px;
@@ -69,10 +60,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     color: #FFFFFF;
     background-color: #EBAC87;
     border-radius: 10px;
-    margin-left: 607px;
-    margin-right: 566px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     padding: 24px 50px;
+    display: block;
 }
 
 
@@ -80,21 +72,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /* Блок горизонтального меню */
 
 .menu{
-    width: 1181px;
-    height: 60px;
-
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    flex-wrap: nowrap;
-
+    justify-content: center;
     margin-top: 50px;
-    margin-left: 129px;
 }
 
 .menu_item{
     display: flex;
+    margin-right: 50px;
 }
 
 .menu_item_pointer{
@@ -103,7 +88,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     border-radius: 50%;
     background-color: #9DB0D1; 
     display: flex;
-    justify-content: center;   
+    justify-content: center;
+    padding: 17px 15px 18px 15px;   
 }
 
 .menu_item_content{
@@ -120,9 +106,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /* Блок с облаками и абзацем h2 */
 
 .block_sky{
-    width: 1440px;
     height: 400px;
-    background: url(../img/bg_sky.png) no-repeat top / auto 200px, linear-gradient(#87C6EB00, #87C6EB);   
+    background: url(../img/bg_sky.png) repeat-x top / auto 200px, linear-gradient(#87C6EB00, #87C6EB);   
     
     /*Стили для текста*/
     font-size: 40px;
@@ -136,18 +121,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /* Блок основного контента */
 
 .content_block{
-    width: 1440px;
     height: 1016px;
     background-color: #87C6EB;          
 }
 
 .posters{
-    width: calc(100% - 240px);
+    width: 1200px;
     height: 560px;
     
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    
     justify-content: space-between;
     text-align: center;
     flex-wrap: nowrap;
@@ -231,7 +215,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     margin: 0 auto;
     
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
 
@@ -264,7 +248,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     margin-top: 50px;
 }
 
-.about_button{
+
+
+.about_buttons{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+
+}
+
+.button_check{
     width: 220px;
     height: 80px;
     border-radius: 10px;
@@ -276,18 +269,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     font-weight: 400;
     text-transform: uppercase;
     color: #EBAC87;
-    margin-top: 50px;
-    
 }
 
-/*.about_pic{
-    width: 600px;
-    height: 475px;
-    background: url(img/Rectangle3.png);
-    background-size: cover;
-}*/
-
-.question_button{
+.button_question{
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -298,28 +282,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     color: #FFFFFF;
     text-align: center;
     padding: 8px 23px 4px 24px;
-    margin-top: 345px;
-    margin-left: 520px;
 }
 
     /* Блок футера с контактной инфой */
 
 .footer{
-    width: 1440px;
-    height: 180px;
-
-    padding: 50px 138px 50px 120px;
-
+    width: 1200px;
+    margin: 50px auto;
+    
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;    
     align-items: center;
 }
 
 .footer_button{
-    width: 267px;
-    height: 80px;
     font-family: 'Arapey', sans-serif;
     font-size: 30px;
     line-height: 32px;
@@ -334,12 +311,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 
 .footer_contacts{
-    width: 144px;
-    height: 24px;
-
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+.footer_contacts a{
+    margin-left: 36px;
 }
 
 .footer_contacts img{
